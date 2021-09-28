@@ -3,6 +3,6 @@
 
 Buenas se esta desarrollando un Aplicativo para el programa Mintics ! 👋 Muchas Gracias.
 
-Tools and programs:
+Herramientas y Programas:
 
 🟨🔻 HTML , Javascript(Node,Angular,PostgreSQL) y Css 🔺🟨
