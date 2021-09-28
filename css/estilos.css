@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&family=Urbanist:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+      to top,
+      rgba(3, 59, 50, 0.445) 5%,
+      rgba(34, 139, 56, 0.486) 90%
+    ),
+    url(uno.jpg);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(8, 92, 78, 0.705);
+  left: 391px;
+}
+
+.content {
+  width: calc(100%-392px);
+  height: 100vh;
+  position: absolute;
+  left: 391px;
+  font-size: 20px;
+  background-image: linear-gradient(
+      to top,
+      rgba(3, 59, 50, 0.445) 5%,
+      rgba(34, 139, 56, 0.486) 90%
+    ),
+    url(uno.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.titulo {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.subtitulo {
+  font-family: "Urbanist", sans-serif;
+  font-size: 40px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.bienvenida {
+  font-family: "Urbanist", sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+#nav_drawer {
+  width: 390px;
+  height: 100vh;
+  position: absolute;
+  background-image: linear-gradient(90deg, #00743ebb 0%, #034141b7 100%);
+  box-shadow: 0 0 6 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#navbar_logo {
+  width: 350px;
+  height: auto;
+  background-position: center;
+}
+
+#buttonreg_nav {
+  font-family: "Urbanist", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  height: 40px;
+  width: 120px;
+  background: linear-gradient(#008362c4, #03ebd7);
+  position: absolute;
+  margin: auto;
+  left: 130px;
+  top: 70%;
+  bottom: 5px;
+  place-items: center;
+  color: #022014;
+  font-weight: 10;
+  text-decoration: none;
+}
+
+#form_registro_usuario {
+  position: absolute;
+  font-size: 20px;
+  color: #00535e;
+  width: 600px;
+  height: 250px;
+  left: 400px;
+  top: 35%;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+#formulario {
+  width: 560px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 20px;
+  border: 1px solid #00b1a6;
+}
+
+#in_usuario {
+  border: 1px solid #00b1a6;
+  border-radius: 3px;
+  width: 300px;
+  height: 22px;
+}
+
+#in_contrasena {
+  border: 1px solid #00b1a6;
+  border-radius: 3px;
+  width: 300px;
+  height: 22px;
+}
+
+.etiqueta {
+  margin: 20px;
+}
+
+#btn_enviar_registro {
+  background-color: #00b1a6;
+  position: absolute;
+  left: 650px;
+  top: 61%;
+  color: white;
+  font-size: 16px;
+  border: 0;
+  border-radius: 3px;
+  width: 100px;
+  height: 30px;
+}
