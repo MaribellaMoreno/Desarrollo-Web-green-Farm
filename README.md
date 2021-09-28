@@ -1,5 +1,5 @@
 <h1>¡Desarrollo de un Aplicativo Insumos Agricolas! 👩‍💻</h1>
-https://github.com/mafer23/Desarrollo-Web-green-Farm.git
+https://maribellamoreno.github.io/Desarrollo-Web-green-Farm/
 
 Buenas se esta desarrollando un Aplicativo para el programa Mintics ! 👋 Muchas Gracias.
 
