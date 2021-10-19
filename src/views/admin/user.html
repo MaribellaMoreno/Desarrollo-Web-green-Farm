@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usuarios</title>
+    <%-include("../partials/head.html")%>
+</head>
+<body>
+    <%-include("../partials/body.html")%>
+    <div class="container">
+        <div class="col-12">
+            <table id="productos" class="shadow-lg table table-success table-striped table-hover" >
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">USER</th>
+                        <th scope="col">PASS</th>
+                        <th scope="col">EMAIL</th>
+                        <th scope="col">DIRECCION</th>
+                        <th scope="col">APELLIDO</th>
+                        <th scope="col">ACCION</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <% user.forEach((users)=>{ %>
+
+                        <tr>
+                            <td><%= users.idusers %></td>
+                            <td><%= users.user %></td>
+                            <td><%= users.pass %></td>
+                            <td><%= users.email %></td>
+                            <td><%= users.dirección %></td>
+                            <td><%= users.apellido %></td>
+                            <td>
+                                <a href="/api/articulos/:id" class="btn btn-success"><i class="bi bi-trash"></i></a>
+                            </td>
+                        </tr>
+                        
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

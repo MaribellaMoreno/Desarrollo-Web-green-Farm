@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar</title>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <%-include("partials/head.html")%>
+</head>
+<body>
+    <%-include("partials/body.html")%>
+    <main>
+        <!-- Shopping Cart -->
+        <section class="shopping-cart dark">
+            <div class="container" id="container">
+                <div class="block-heading">
+                    <h2>Shopping Cart</h2>
+                    <p>This is an example</p> 
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8">
+                            <div class="items">
+                                <div class="product">
+                                    <div class="info">
+                                        <div class="product-details">
+                                            <div class="row justify-content-md-center">
+                                                <div class="col-md-3">
+                                                    <img class="img-fluid mx-auto d-block image" src="imagenes/mazorcas.jpg">
+                                                </div>
+                                                <div class="col-md-4 product-detail">
+                                                    <h5>kit para cultivo de maiz</h5>
+                                                    <div class="product-info col-md-4">
+                                                        <p><b>Description: </b><span id="product-description">
+                                                            <div class="col"></div>
+                                                            <li>Paraquat<input type="number" id="quantity" value="1" min="0" class="form-control "></li> 
+                                                            <li>Losrsban<input type="number" id="quantity" value="1" min="0" class="form-control "></li> 
+                                                            <li>Amistar<input type="number" id="quantity" value="1" min="0" class="form-control "></li> 
+                                                            <li>Urea<input type="number" id="quantity" value="1" min="0" class="form-control "></li> 
+                                                            <li>Fosforita<input type="number" id="quantity" value="1" min="0" class="form-control "></li> 
+                                                            <li>Cloruro<input type="number" id="quantity" value="1" min="0" class="form-control "></li> 
+                                                        </span><br>
+                                                        
+                                                        <b>Price:</b> $ <span id="unit-price"></span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 product-detail">
+                                                    <label for="quantity"><h5>n° Hectareas</h5></label>
+                                                    <input type="number" id="quantity" value="1" min="1" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="summary">
+                                <h3>Cart</h3>
+                                <div class="summary-item"><span class="text">Subtotal</span><span class="price" id="cart-total"></span></div>
+                                    <button class="btn btn-success btn-lg btn-block" id="checkout-btn">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+        
+</body>
+</html>

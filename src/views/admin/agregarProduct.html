@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%-include("../partials/head.html")%>
+    <title>Agregar</title>
+</head>
+<body>
+    <%-include("../partials/body.html")%>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form action="/api/articulos" method="post">
+                    <input type="text" id="producto" name="producto" placeholder="PRODUCTO">
+                    <input type="text" id="descripcion" name="descripcion" placeholder="DESCRIPCION">
+                    <input type="text" id="stock" name="stock" placeholder="STOCK">
+                    <input type="text" id="precio" name="precio" placeholder="PRECIO">
+                    <button class="btn btn-success shadow-lg" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseExample"><i class="bi bi-check"></i></button>
+                    <a href="/administrador.html" class="btn btn-success"><i class="bi bi-x"></i></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
