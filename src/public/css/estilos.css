@@ -31,6 +31,26 @@ body{
     margin-top: 0;
 }
 
+/* Cards de catalogo */
+.card-body-catalogo{
+    width: 19.88rem;
+    height: 180px;
+    color: #0a4930;
+    background: #499e9093;
+    padding: 0px;
+    margin-top: -211px;
+    transition: 0.6s;
+    border-radius: 5%;
+}
+
+.card-body-catalogo:hover{
+    margin-top: 0px;
+}
+
+.card:hover .card-body-catalogo{
+    margin-top: 0;
+}
+
 
 /*.registro-body{
     text-align: center;
