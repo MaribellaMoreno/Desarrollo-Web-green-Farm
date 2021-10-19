@@ -5,12 +5,58 @@
 }
 
 body{
-    background-color:rgb(226, 241, 225);
-    font-family: 'Open Sans', sans-serif;
+    
+    background: #fff;
+}
+
+span{
+    position: absolute;
+    pointer-events: none;
+    background: rgb(186, 252, 206);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.card img{
+    z-index: 1;
+}
+
+.card-body{
+    width: 19.88rem;
+    height: 210px;
+    color: #0a4930;
+    background: #499e7a;
+    padding: 0px;
+    margin-top: -211px;
+    transition: 0.6s;
+}
+
+.card-body:hover{
+    margin-top: 0px;
+}
+
+.card:hover .card-body{
+    margin-top: 0;
 }
 
 
-.registro-body{
+/*.registro-body{
     text-align: center;
     margin-top: auto;
 }
@@ -25,16 +71,18 @@ body{
     color: mediumseagreen 0.3;
     font-size: 28px;
     padding: 70px 0 10px 0;
-}
+}*/
 
-.registro-form input[type="password"],
-.registro-form input[type="text"]{
+/*.registro-form input[type="password"],
+.registro-form input[type="text"],
+.registro-form input[type="email"],
+.registro-form input[type="direction"]{
     width: 100%;
     padding: 15px;
     border: 1px solid #ced4da;
     margin-bottom: 10px;
     box-sizing: border-box;
-}
+}*/
 
 .btn-register{
     width: 100%;
@@ -78,14 +126,16 @@ body{
     padding: 70px 0 10px 0;
 }
 
-.login-form input[type="password"],
-.login-form input[type="text"]{
+/*.login-form input[type="password"],
+.login-form input[type="text"],
+.registro-form input[type="email"],
+.registro-form input[type="direction"]{
     width: 100%;
     padding: 15px;
     border: 1px solid #ced4da;
     margin-bottom: 10px;
     box-sizing: border-box;
-}
+}*/
 
 .btn-login{
     width: 100%;

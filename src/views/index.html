@@ -10,12 +10,18 @@
 </head>
 <body>
     <%-include("partials/body.html")%>
+    <% if(user) { %>
+        <h2 class="badge bg-success shadow-lg">Usuario:
+            <%= user.user %>
+        </h2>
+    <% } %>
     <section class="position-relative overflow-hidden m-t-80">
         <div class="overlay-1"></div>
         <div class="container pt-10 pb-6">
             <div class="row align-items-center">
                 <div class="col-md-7">
                     <div class="pr-lg-5">
+                        
                         <div class="badge badge-primary">
                             <b>juandfg</b>
                         </div>
@@ -47,15 +53,15 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="demo-box text-center">
-                        <a href="" target="_blank">
-                            <img src="/imagenes/corn-g4de78159a_640.jpg" alt="demo-img" class="img-fluid shadow-lg animate">
+                        <a href="/maiz.html" >
+                            <img src="/imagenes/corn-g4de78159a_640.jpg" alt="demo-img" class="img-fluid shadow-lg ">
                         </a>
                         <h5 class="mt-4 f-17">Maiz</h5>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="demo-box text-center">
-                        <a href="" target="_blank">
+                        <a href="/arroz.html" >
                             <img src="/imagenes/harvesting-g3847d7547_640.jpg" alt="demo-img" class="img-fluid shadow-lg animate">
                         </a>
                         <h5 class="mt-4 f-17">Arroz</h5>
@@ -63,7 +69,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="demo-box text-center">
-                        <a href="" target="_blank">
+                        <a href="/cafe.html" >
                             <img src="/imagenes/fresh-gb355737b9_640.jpg" alt="demo-img" class="img-fluid shadow-lg animate">
                         </a>
                         <h5 class="mt-4 f-17">Café</h5>
@@ -73,7 +79,7 @@
             <div class="row justify-content-center mt-5">
                 <div class="col-lg-4">
                     <div class="demo-box text-center">
-                        <a href="" target="_blank">
+                        <a href="/cacao.html" >
                             <img src="imagenes/martinique-g1de360b2a_640.jpg" alt="demo-img" class="img-fluid shadow-lg animate">
                         </a>
                         <h5 class="mt-4 f-17"> Cacao</h5>
@@ -81,8 +87,8 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="demo-box text-center">
-                        <a href="" target="_blank">
-                            <img src="/imagenes/palm-g1c97677ae_640.jpg" alt="demo-img" class="img-fluid shadow-lg animate">
+                        <a href="/aceite.html" >
+                            <img src="/imagenes/palm-g1c97677ae_640.jpg" alt="demo-img" class="img-fluid shadow-lg animated_animated animate__heartBeat">
                         </a>
                         <h5 class="mt-4 f-17">Aceite de palma</h5>
                     </div>
@@ -90,6 +96,7 @@
             </div>
         </div>
     </section>
-    <section class="section"></section>
+    <section id="section1"></section>
+    
 
 </html>

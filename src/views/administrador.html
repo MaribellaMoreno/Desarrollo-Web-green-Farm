@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap5.min.css">
+
+    <%-include("partials/head.html")%>
+</head>
+<body>
+    
+    <%-include("partials/body.html")%>
+
+    <div class="container">
+        <div class="col-12">
+            <table id="productos" class="shadow-lg table table-success table-striped table-hover" >
+                <thead>
+                    <a href="/admin/agregarProduct.html" class="btn btn-success "><i class="bi bi-plus"></i></a>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">PRODUCTO</th>
+                        <th scope="col">DESCRIPCION</th>
+                        <th scope="col">STOCK</th>
+                        <th scope="col">PRECIO</th>
+                        <th scope="col">ACCIONES</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <% filas.forEach((row)=>{ %>
+                        <tr>
+                            <td><%= row.id %></td>
+                            <td><%= row.PRODUCTO %></td>
+                            <td><%= row.DESCRIPCION %></td>
+                            <td><%= row.STOCK %></td>
+                            <td><%= row.PRECIO %></td>
+                            <td>
+                                <a href="/delete/<%= row.id %>" class="btn btn-success"><i class="bi bi-trash"></i></a>
+                                <a href='/admin/actualizar.html/<%= row.id %>' class="btn btn-success"><i class="bi bi-pencil"></i></a>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"></script>
+    
+    <script>
+    
+        /*$(document).ready(function() {   
+            var url = 'http://localhost:3000/api/articulos/';
+
+            $('#productos1').DataTable({            
+                "ajax":{
+                    "url": url,
+                    "dataSrc":""
+                },
+                "columns":[
+                    {"data": "idusers"},
+                    {"data": "user"},
+                    {"data": "pass"},
+                    {"data": "email"},
+                    {"data": "dirección"},
+                    {"data": "apellido"},
+                ],
+                "columnDefs":[{
+                    "targets":[2],
+                    render(v){
+                        return Number(v).toFixed(2)
+                    }
+                }]
+            });
+        });*/
+    </script>
+    
+</body>
+</html>

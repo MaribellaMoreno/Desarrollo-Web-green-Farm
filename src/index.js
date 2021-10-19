@@ -5,9 +5,8 @@ const bcryptjs = require("bcryptjs");
 const dotenv = require('dotenv');
 dotenv.config({path:'.env'});
 const bodyParser = require("body-parser");
-
+const cookieParser = require('cookie-parser');
 const session = require("express-session");
-
 
 
 //settings
@@ -21,13 +20,23 @@ app.use(session({
     saveUninitialized:true
 }));
 
+//cookie-parser
+app.use(cookieParser());
+
+//eliminar cache
+/*app.use(function(req, res, next){
+    if(!req.user)
+    res.header('cache-control', 'private, no-cache, no-store, must-revalidate');
+});*/
 
 //middlewares
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
+
 //routes
 app.use(require("./routes/index"));
+//app.use(require("./controller/authcontroller"));
 
 //DB
 const connection = require("./datbase/db");
