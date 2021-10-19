@@ -11,35 +11,31 @@
             <i class="bi bi-list"></i>
         </button>
         
-        <div class="offcanvas offcanvas-end"  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav ml-auto align-items-center">
-                    <li class="nav-item">
-                        <a href="/" class="nav-link active">GreenFarm</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/productos.html" class="nav-link" >Calcular</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/catalogo" class="nav-link">Catalogo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/login.html" class="nav-link">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/administrador.html" class="btn-success bi bi-gear"></a>
-                        <a href="/admin/user.html" class="btn-success bi bi-person"></a>
-                    </li>
-                    <li class="nav-item">
-                        <div class="nav-link">
-                            <a href="/pagar.html"  class="btn btn-success"><i class="bi bi-cart"></i></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav d-flex justify-content-end">
+                <li class="nav-item">
+                    <a href="/" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/productos.html" class="nav-link" >Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/login.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Login
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="/administrador.html">Admin</a>
+                      <a class="dropdown-item" href="/admin/user.html">Usuario</a>
+                     
+                    </div>
+                  </li>
+                <li class="nav-item">
+                    <div class="nav-link">
+                        <a href="/pagar.html"  class="btn btn-success">purchase</a>
+                    </div>
+                </li>
+                
+            </ul>
         </div>
     </div>
 </nav>
@@ -77,10 +73,10 @@
     setInterval(createSquare, 150)
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>

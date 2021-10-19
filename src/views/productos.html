@@ -116,7 +116,7 @@
                 title:'<%= alertTitle %>',
                 text:'<%= alertMessage %>',
                 icon:'<%= alertIcon %>',
-                showConfirmButton:<%= showConfirmButton %>,
+                showConfirmButton:'<%= showConfirmButton %>',
                 footer: '<%= footer%>',
                 timer:'<%= timer%>'
             }).then(() =>{
@@ -124,6 +124,6 @@
             });
         </script>
     <% } %>
-
+    <%-include("partials/footer.html")%>
 </body>
 </html>
